@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LinkedInSDK_Example' do
+  pod 'LinkedInSDK', :path => '../'
+
+  target 'LinkedInSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
