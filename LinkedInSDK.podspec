@@ -26,5 +26,9 @@ Pod::Spec.new do |s|
 
   #s.public_header_files = 'linkedin-sdk.framework/Headers/LISDK.h'
   #s.user_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => 'LinkedInSDK' }
+  s.pod_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/LinkedInSDK',
+    'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
+  }
 
 end
