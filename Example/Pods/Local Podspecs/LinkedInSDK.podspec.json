@@ -17,6 +17,9 @@
   "platforms": {
     "ios": "8.0"
   },
-  "header_dir": "linkedin-sdk",
-  "vendored_frameworks": "LinkedInSDK/linkedin-sdk.framework"
+  "header_dir": "LinkedInSDK",
+  "frameworks": "LinkedInSDK",
+  "preserve_paths": "LinkedInSDK/",
+  "vendored_frameworks": "LinkedInSDK/linkedin-sdk.framework",
+  "public_header_files": "LinkedInSDK/linkedin-sdk.framework/**/*.h"
 }

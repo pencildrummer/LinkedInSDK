@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
 
   s.header_dir = 'LinkedInSDK'
 
-  s.preserve_paths = 'LinkedInSDK/
+  s.frameworks = 'LinkedInSDK'
+  s.preserve_paths = 'LinkedInSDK/'
   s.vendored_frameworks = 'LinkedInSDK/linkedin-sdk.framework'
   s.public_header_files = 'LinkedInSDK/linkedin-sdk.framework/**/*.h'
 
