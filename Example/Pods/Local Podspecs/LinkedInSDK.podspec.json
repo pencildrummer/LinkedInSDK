@@ -18,8 +18,15 @@
     "ios": "8.0"
   },
   "header_dir": "LinkedInSDK",
-  "frameworks": "LinkedInSDK",
-  "preserve_paths": "LinkedInSDK/",
+  "source_files": [
+    "LinkedInSDK/linkedin-sdk.framework/Headers/*.{h,m}",
+    "LinkedInSDK/*.{swift,m}"
+  ],
+  "frameworks": "linkedin-sdk",
   "vendored_frameworks": "LinkedInSDK/linkedin-sdk.framework",
-  "public_header_files": "LinkedInSDK/linkedin-sdk.framework/**/*.h"
+  "public_header_files": "LinkedInSDK/linkedin-sdk.framework/**/*.h",
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "-framework linkedin-sdk",
+    "FRAMEWORK_SEARCH_PATHS": "\"${PODS_ROOT}/../../LinkedInSDK/\""
+  }
 }

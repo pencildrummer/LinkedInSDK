@@ -7,54 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F1260078F4A7169EFAC2DC8E100A5F8 /* Pods-LinkedInSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C1459784C63D7834DE778013F403F1 /* Pods-LinkedInSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1DEB808F9DE5871D601A627BB7684D6 /* Pods-LinkedInSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C36264084E1B9704F9790D6694D84654 /* Pods-LinkedInSDK_Example-dummy.m */; };
-		B450BA3BF0E2F26FD021D6AC818ABFD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		42D8B17B3A42002916743A518B0E792C /* LISDKAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B299A2CA62C34F1775BEEEE32A1ED822 /* LISDKAPIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551748640F846091ECDB8AA4172BE5AF /* LISDKDeeplinkHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F2297A2F7B1877A897630043B2981583 /* LISDKDeeplinkHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6478760C3B9C4B7A90C5BF9E1795836D /* LISDKAccessToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 31721B6D09D37716CBD87AAAB721D6BE /* LISDKAccessToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69330102DAFA667FD7C20A4B468BA0B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6260E557089605ECE3379116D29913F2 /* Foundation.framework */; };
+		6BB1238318B55810E497EFDEDFB7B915 /* LISDKAPIError.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7F6733B2A7B22D5ED3D7906E05773B /* LISDKAPIError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D1D332A11E3EC697C214A73A0FA128 /* LISDKPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = AABA93A0A2A86FBBBA2F92B23AC48DE9 /* LISDKPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		740BE4CE726B6DE0738DFFB04B9F8464 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6915A00AF1C3B0F71C76F0033867B4C1 /* linkedin-sdk.framework */; };
+		76BDB409CC04E81E27CDD9DB39164A0F /* LinkedInSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D01617CB2AD412009829B6174F9C40BD /* LinkedInSDK-dummy.m */; };
+		7D06BF8F8F358019F062EB65C887B3D4 /* LISDKCallbackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1D26D1491521DA2D2E47CE24A1872D /* LISDKCallbackHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C4DC93F587AD0F36EB0741085495820 /* LISDKSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 9839554A05197C15369399A801DFFDE3 /* LISDKSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F20C84D320F770903DF4F261B560946 /* LinkedInSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A293BEE26876B1D7961C0CC2996F981 /* LinkedInSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B45A64C5707E46C9FCF4E36A6292D6D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6260E557089605ECE3379116D29913F2 /* Foundation.framework */; };
+		D0EAAF5EE88B848EC44C126CF0F06A36 /* Pods-LinkedInSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C36264084E1B9704F9790D6694D84654 /* Pods-LinkedInSDK_Example-dummy.m */; };
+		D3BA6B715A34AFDD4A1DC0568AF93076 /* LISDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F336BD6430CF5C2CE36456212684CAAD /* LISDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9906B16A6A56BBB0C3E930C1562354A /* LISDKSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6C9B65B7DFACE1A12BFBF0A896081E /* LISDKSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC5FF2807BDC8A1160E493EA9780100F /* LISDKAPIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F188693C87CD7463A2FBED9A6BCFCB38 /* LISDKAPIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F03478C502D498BF723E2D927EED09CB /* Pods-LinkedInSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C1459784C63D7834DE778013F403F1 /* Pods-LinkedInSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B220DDBF40A070FCC8360560472CC6 /* LISDKDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0817195CBFF1B54553DE51B68E272BE /* LISDKDummy.swift */; };
+		F8D34538AA25D77EED321101A085136F /* LISDKErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE3254E2891439B9C5DD0BE2A04C13D /* LISDKErrorCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C5DF343F57C48F13F16E7F56D7B44378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A566C9E9169963947ACDF9E28FB47436;
+			remoteInfo = LinkedInSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		058A803719D021034822EA81777E5B5D /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "LinkedInSDK/linkedin-sdk.framework"; sourceTree = "<group>"; };
+		0A1D26D1491521DA2D2E47CE24A1872D /* LISDKCallbackHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKCallbackHandler.h; sourceTree = "<group>"; };
+		0A293BEE26876B1D7961C0CC2996F981 /* LinkedInSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LinkedInSDK-umbrella.h"; sourceTree = "<group>"; };
+		0AC3BD4AE873BB96F5AF0050EA6FC2B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		210B0BB51D0CE958920CE3B140D9CA26 /* Pods_LinkedInSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedInSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		213AA9B67EFC3B844BF2F0F3A80CD2B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218D924DE2BF94CD09E06FB9985F890F /* LinkedInSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LinkedInSDK-prefix.pch"; sourceTree = "<group>"; };
+		2E6C9B65B7DFACE1A12BFBF0A896081E /* LISDKSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKSessionManager.h; sourceTree = "<group>"; };
+		31721B6D09D37716CBD87AAAB721D6BE /* LISDKAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKAccessToken.h; sourceTree = "<group>"; };
 		39956D7DC4879F89E6EAB408435FEE8F /* Pods-LinkedInSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LinkedInSDK_Example.modulemap"; sourceTree = "<group>"; };
-		3D76E2C85A42C98500C3C79F30EF01D8 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "LinkedInSDK/linkedin-sdk.framework"; sourceTree = "<group>"; };
+		46AB590DF4EEBA95BAEAD957194A28F0 /* LinkedInSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LinkedInSDK.modulemap; sourceTree = "<group>"; };
+		46BC6833FA7CF20E1D14B6126CAE622F /* LinkedInSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinkedInSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6260E557089605ECE3379116D29913F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6915A00AF1C3B0F71C76F0033867B4C1 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/linkedin-sdk.framework"; sourceTree = DEVELOPER_DIR; };
 		6B38D65D9543D9650D6D989F587056A1 /* Pods-LinkedInSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		72F17D9D6CCABE987ABA98282078E11E /* Pods-LinkedInSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkedInSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		87C1459784C63D7834DE778013F403F1 /* Pods-LinkedInSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinkedInSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		89B16D2A8940A28104DD669BC0F4CD68 /* Pods-LinkedInSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkedInSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9839554A05197C15369399A801DFFDE3 /* LISDKSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKSession.h; sourceTree = "<group>"; };
+		A0817195CBFF1B54553DE51B68E272BE /* LISDKDummy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LISDKDummy.swift; sourceTree = "<group>"; };
+		AABA93A0A2A86FBBBA2F92B23AC48DE9 /* LISDKPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKPermission.h; sourceTree = "<group>"; };
+		AEEAE5A12F47EA7A68419AE73487636A /* LinkedInSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LinkedInSDK.xcconfig; sourceTree = "<group>"; };
+		B299A2CA62C34F1775BEEEE32A1ED822 /* LISDKAPIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKAPIResponse.h; sourceTree = "<group>"; };
 		B84161806F8AA759F5C5534F7E08DBA8 /* Pods-LinkedInSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkedInSDK_Example-resources.sh"; sourceTree = "<group>"; };
+		BAE3254E2891439B9C5DD0BE2A04C13D /* LISDKErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKErrorCode.h; sourceTree = "<group>"; };
 		C36264084E1B9704F9790D6694D84654 /* Pods-LinkedInSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkedInSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D74D85A67A5F4C06FDA53B74B6EBF9FB /* Pods_LinkedInSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedInSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01617CB2AD412009829B6174F9C40BD /* LinkedInSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LinkedInSDK-dummy.m"; sourceTree = "<group>"; };
+		DE7F6733B2A7B22D5ED3D7906E05773B /* LISDKAPIError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKAPIError.h; sourceTree = "<group>"; };
+		F188693C87CD7463A2FBED9A6BCFCB38 /* LISDKAPIHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKAPIHelper.h; sourceTree = "<group>"; };
+		F2297A2F7B1877A897630043B2981583 /* LISDKDeeplinkHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDKDeeplinkHelper.h; sourceTree = "<group>"; };
 		F229DC4B5EAE18E223791A66BFEC439C /* Pods-LinkedInSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F336BD6430CF5C2CE36456212684CAAD /* LISDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LISDK.h; sourceTree = "<group>"; };
 		FD72D099DF2434C3E06A43F978AE52E6 /* Pods-LinkedInSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B5D6DC25195F8754920CC66484E0C93 /* Frameworks */ = {
+		5E6762758E5A80575406CFE4F9642A30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B450BA3BF0E2F26FD021D6AC818ABFD4 /* Foundation.framework in Frameworks */,
+				69330102DAFA667FD7C20A4B468BA0B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9972709554745EE6809365DF943D3F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45A64C5707E46C9FCF4E36A6292D6D5 /* Foundation.framework in Frameworks */,
+				740BE4CE726B6DE0738DFFB04B9F8464 /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1494AE4D2AC7B3528F91F090450C7D6C /* Products */ = {
+		0D19061F5060F2EEC12C24B52B257FA7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D74D85A67A5F4C06FDA53B74B6EBF9FB /* Pods_LinkedInSDK_Example.framework */,
+				5CEF0B8B4FD5D00EA285F0E370330D67 /* LinkedInSDK */,
 			);
-			name = Products;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		143D6C56F8A28D77C2A1CC020F2DACED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				0AC3BD4AE873BB96F5AF0050EA6FC2B0 /* Info.plist */,
+				46AB590DF4EEBA95BAEAD957194A28F0 /* LinkedInSDK.modulemap */,
+				AEEAE5A12F47EA7A68419AE73487636A /* LinkedInSDK.xcconfig */,
+				D01617CB2AD412009829B6174F9C40BD /* LinkedInSDK-dummy.m */,
+				218D924DE2BF94CD09E06FB9985F890F /* LinkedInSDK-prefix.pch */,
+				0A293BEE26876B1D7961C0CC2996F981 /* LinkedInSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LinkedInSDK";
+			sourceTree = "<group>";
+		};
+		15E544F456B9CA748C604245E863CF5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				058A803719D021034822EA81777E5B5D /* linkedin-sdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39C6942A85992C25164E9CACB78812C7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6260E557089605ECE3379116D29913F2 /* Foundation.framework */,
+				6915A00AF1C3B0F71C76F0033867B4C1 /* linkedin-sdk.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39C6942A85992C25164E9CACB78812C7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CEF0B8B4FD5D00EA285F0E370330D67 /* LinkedInSDK */ = {
+			isa = PBXGroup;
+			children = (
+				15E544F456B9CA748C604245E863CF5C /* Frameworks */,
+				683933519647FDE35D2BA45F29512E81 /* LinkedInSDK */,
+				143D6C56F8A28D77C2A1CC020F2DACED /* Support Files */,
+			);
+			name = LinkedInSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		683933519647FDE35D2BA45F29512E81 /* LinkedInSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A0817195CBFF1B54553DE51B68E272BE /* LISDKDummy.swift */,
+				C37ACF65076D4FF1356783A2B7D83703 /* linkedin-sdk.framework */,
+			);
+			path = LinkedInSDK;
+			sourceTree = "<group>";
+		};
+		6A8F479BA582B08C26ADEFA39662BEA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46BC6833FA7CF20E1D14B6126CAE622F /* LinkedInSDK.framework */,
+				210B0BB51D0CE958920CE3B140D9CA26 /* Pods_LinkedInSDK_Example.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		77756BA4BE839E486C2D7BD068C3E705 /* Pods-LinkedInSDK_Example */ = {
@@ -79,9 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FEBC219887B133D4AEF4C096F4DE0F5F /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1494AE4D2AC7B3528F91F090450C7D6C /* Products */,
+				0D19061F5060F2EEC12C24B52B257FA7 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				6A8F479BA582B08C26ADEFA39662BEA4 /* Products */,
 				8D3FC27279BFFBF2290BBD1691998E32 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -94,68 +209,98 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9FB39FF07EF13F4AE5504B13EA59DFFC /* LinkedInSDK */ = {
+		C37ACF65076D4FF1356783A2B7D83703 /* linkedin-sdk.framework */ = {
 			isa = PBXGroup;
 			children = (
-				F4ED02D24E6D8CD0B1207BC80A907520 /* Frameworks */,
+				D144EECA43C22AA4F69FFE84AFC40124 /* Headers */,
 			);
-			name = LinkedInSDK;
-			path = ../..;
+			path = "linkedin-sdk.framework";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D144EECA43C22AA4F69FFE84AFC40124 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				F336BD6430CF5C2CE36456212684CAAD /* LISDK.h */,
+				31721B6D09D37716CBD87AAAB721D6BE /* LISDKAccessToken.h */,
+				DE7F6733B2A7B22D5ED3D7906E05773B /* LISDKAPIError.h */,
+				F188693C87CD7463A2FBED9A6BCFCB38 /* LISDKAPIHelper.h */,
+				B299A2CA62C34F1775BEEEE32A1ED822 /* LISDKAPIResponse.h */,
+				0A1D26D1491521DA2D2E47CE24A1872D /* LISDKCallbackHandler.h */,
+				F2297A2F7B1877A897630043B2981583 /* LISDKDeeplinkHelper.h */,
+				BAE3254E2891439B9C5DD0BE2A04C13D /* LISDKErrorCode.h */,
+				AABA93A0A2A86FBBBA2F92B23AC48DE9 /* LISDKPermission.h */,
+				9839554A05197C15369399A801DFFDE3 /* LISDKSession.h */,
+				2E6C9B65B7DFACE1A12BFBF0A896081E /* LISDKSessionManager.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F4ED02D24E6D8CD0B1207BC80A907520 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3D76E2C85A42C98500C3C79F30EF01D8 /* linkedin-sdk.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FEBC219887B133D4AEF4C096F4DE0F5F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9FB39FF07EF13F4AE5504B13EA59DFFC /* LinkedInSDK */,
-			);
-			name = "Development Pods";
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D1DCD4241488898A8B91332EDD885427 /* Headers */ = {
+		4F5807F6030FEC4DCAEDA00494CC183C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1260078F4A7169EFAC2DC8E100A5F8 /* Pods-LinkedInSDK_Example-umbrella.h in Headers */,
+				9F20C84D320F770903DF4F261B560946 /* LinkedInSDK-umbrella.h in Headers */,
+				D3BA6B715A34AFDD4A1DC0568AF93076 /* LISDK.h in Headers */,
+				6478760C3B9C4B7A90C5BF9E1795836D /* LISDKAccessToken.h in Headers */,
+				6BB1238318B55810E497EFDEDFB7B915 /* LISDKAPIError.h in Headers */,
+				EC5FF2807BDC8A1160E493EA9780100F /* LISDKAPIHelper.h in Headers */,
+				42D8B17B3A42002916743A518B0E792C /* LISDKAPIResponse.h in Headers */,
+				7D06BF8F8F358019F062EB65C887B3D4 /* LISDKCallbackHandler.h in Headers */,
+				551748640F846091ECDB8AA4172BE5AF /* LISDKDeeplinkHelper.h in Headers */,
+				F8D34538AA25D77EED321101A085136F /* LISDKErrorCode.h in Headers */,
+				70D1D332A11E3EC697C214A73A0FA128 /* LISDKPermission.h in Headers */,
+				8C4DC93F587AD0F36EB0741085495820 /* LISDKSession.h in Headers */,
+				D9906B16A6A56BBB0C3E930C1562354A /* LISDKSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E629364505075D2C5C877C31B5C96E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03478C502D498BF723E2D927EED09CB /* Pods-LinkedInSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5FD2DB344F76FA8A161C1605F0F43B33 /* Pods-LinkedInSDK_Example */ = {
+		A566C9E9169963947ACDF9E28FB47436 /* LinkedInSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91394DE4BC8D06766EDD17D0EFE77767 /* Build configuration list for PBXNativeTarget "Pods-LinkedInSDK_Example" */;
+			buildConfigurationList = C3EFC4DF19FAF326127D28E22DC67AA7 /* Build configuration list for PBXNativeTarget "LinkedInSDK" */;
 			buildPhases = (
-				F38D4733DE212FE5D5F4364FDC855700 /* Sources */,
-				1B5D6DC25195F8754920CC66484E0C93 /* Frameworks */,
-				D1DCD4241488898A8B91332EDD885427 /* Headers */,
+				24AF18666C43EE34323677448FA9BD4D /* Sources */,
+				9972709554745EE6809365DF943D3F55 /* Frameworks */,
+				4F5807F6030FEC4DCAEDA00494CC183C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = LinkedInSDK;
+			productName = LinkedInSDK;
+			productReference = 46BC6833FA7CF20E1D14B6126CAE622F /* LinkedInSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD1AC32B244133EB3437EE64C17CE24A /* Pods-LinkedInSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D37EACAC0B18EE35FF2E65BDB9831AE /* Build configuration list for PBXNativeTarget "Pods-LinkedInSDK_Example" */;
+			buildPhases = (
+				B156412F35EF2CFE6E36088130BAF48A /* Sources */,
+				5E6762758E5A80575406CFE4F9642A30 /* Frameworks */,
+				B6E629364505075D2C5C877C31B5C96E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AF50D4154A4193A712A3146FD91E880 /* PBXTargetDependency */,
+			);
 			name = "Pods-LinkedInSDK_Example";
 			productName = "Pods-LinkedInSDK_Example";
-			productReference = D74D85A67A5F4C06FDA53B74B6EBF9FB /* Pods_LinkedInSDK_Example.framework */;
+			productReference = 210B0BB51D0CE958920CE3B140D9CA26 /* Pods_LinkedInSDK_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -175,28 +320,76 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1494AE4D2AC7B3528F91F090450C7D6C /* Products */;
+			productRefGroup = 6A8F479BA582B08C26ADEFA39662BEA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FD2DB344F76FA8A161C1605F0F43B33 /* Pods-LinkedInSDK_Example */,
+				A566C9E9169963947ACDF9E28FB47436 /* LinkedInSDK */,
+				FD1AC32B244133EB3437EE64C17CE24A /* Pods-LinkedInSDK_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F38D4733DE212FE5D5F4364FDC855700 /* Sources */ = {
+		24AF18666C43EE34323677448FA9BD4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DEB808F9DE5871D601A627BB7684D6 /* Pods-LinkedInSDK_Example-dummy.m in Sources */,
+				76BDB409CC04E81E27CDD9DB39164A0F /* LinkedInSDK-dummy.m in Sources */,
+				F8B220DDBF40A070FCC8360560472CC6 /* LISDKDummy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B156412F35EF2CFE6E36088130BAF48A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EAAF5EE88B848EC44C126CF0F06A36 /* Pods-LinkedInSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7AF50D4154A4193A712A3146FD91E880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LinkedInSDK;
+			target = A566C9E9169963947ACDF9E28FB47436 /* LinkedInSDK */;
+			targetProxy = C5DF343F57C48F13F16E7F56D7B44378 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		391A77DD6C002C7895D9F67D72DB9E97 /* Release */ = {
+		1465D2B3DAA5F0716569084611B25A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEEAE5A12F47EA7A68419AE73487636A /* LinkedInSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LinkedInSDK/LinkedInSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LinkedInSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LinkedInSDK/LinkedInSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LinkedInSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		365EBF03A673D4011CF8CFE4AA36E06C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD72D099DF2434C3E06A43F978AE52E6 /* Pods-LinkedInSDK_Example.release.xcconfig */;
 			buildSettings = {
@@ -271,7 +464,7 @@
 			};
 			name = Debug;
 		};
-		6F1499A5BD40E0A6FD9376B39907B1B6 /* Debug */ = {
+		8392A811E522C53CFF6DAC71BE15D507 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F229DC4B5EAE18E223791A66BFEC439C /* Pods-LinkedInSDK_Example.debug.xcconfig */;
 			buildSettings = {
@@ -298,6 +491,7 @@
 				PRODUCT_NAME = Pods_LinkedInSDK_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -342,6 +536,36 @@
 			};
 			name = Release;
 		};
+		F44265EC8F862A2312C7D615650265A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEEAE5A12F47EA7A68419AE73487636A /* LinkedInSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LinkedInSDK/LinkedInSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LinkedInSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LinkedInSDK/LinkedInSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LinkedInSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,11 +578,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91394DE4BC8D06766EDD17D0EFE77767 /* Build configuration list for PBXNativeTarget "Pods-LinkedInSDK_Example" */ = {
+		5D37EACAC0B18EE35FF2E65BDB9831AE /* Build configuration list for PBXNativeTarget "Pods-LinkedInSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F1499A5BD40E0A6FD9376B39907B1B6 /* Debug */,
-				391A77DD6C002C7895D9F67D72DB9E97 /* Release */,
+				8392A811E522C53CFF6DAC71BE15D507 /* Debug */,
+				365EBF03A673D4011CF8CFE4AA36E06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EFC4DF19FAF326127D28E22DC67AA7 /* Build configuration list for PBXNativeTarget "LinkedInSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44265EC8F862A2312C7D615650265A4 /* Debug */,
+				1465D2B3DAA5F0716569084611B25A17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

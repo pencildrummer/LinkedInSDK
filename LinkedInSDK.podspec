@@ -20,9 +20,14 @@ Pod::Spec.new do |s|
 
   s.header_dir = 'LinkedInSDK'
 
-  s.frameworks = 'LinkedInSDK'
-  s.preserve_paths = 'LinkedInSDK/'
+  s.source_files = 'LinkedInSDK/linkedin-sdk.framework/Headers/*.{h,m}', 'LinkedInSDK/*.{swift,m}'
+
+  s.frameworks = 'linkedin-sdk'
   s.vendored_frameworks = 'LinkedInSDK/linkedin-sdk.framework'
   s.public_header_files = 'LinkedInSDK/linkedin-sdk.framework/**/*.h'
+  s.user_target_xcconfig = {
+    'OTHER_LDFLAGS' => '-framework linkedin-sdk',
+    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/../../LinkedInSDK/"'
+  }
 
 end
