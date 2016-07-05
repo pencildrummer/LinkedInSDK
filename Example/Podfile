@@ -1,11 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
 use_frameworks!
 
 target 'LinkedInSDK_Example' do
   pod 'LinkedInSDK', :path => '../'
 
-  target 'LinkedInSDK_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

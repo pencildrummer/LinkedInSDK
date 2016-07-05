@@ -1,0 +1,6 @@
+framework module Pods_LinkedInSDK_Example {
+  umbrella header "Pods-LinkedInSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

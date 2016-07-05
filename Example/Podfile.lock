@@ -1,0 +1,16 @@
+PODS:
+  - LinkedInSDK (1.0.7)
+
+DEPENDENCIES:
+  - LinkedInSDK (from `../`)
+
+EXTERNAL SOURCES:
+  LinkedInSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LinkedInSDK: 56c8a296ad399643317db752f7dcb2cc369e03df
+
+PODFILE CHECKSUM: 55e04ceac061bad375562e126c37b56a917607fd
+
+COCOAPODS: 1.0.1

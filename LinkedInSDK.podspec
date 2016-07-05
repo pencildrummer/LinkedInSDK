@@ -8,35 +8,23 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinkedInSDK'
-  s.version          = '0.1.0'
+  s.version          = '1.0.7'
   s.summary          = 'A short description of LinkedInSDK.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/LinkedInSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Fabio Borella' => 'info@pencildrummer.com' }
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/LinkedInSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LinkedInSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'LinkedInSDK' => ['LinkedInSDK/Assets/*.png']
-  # }
+  s.header_dir = 'linkedin-sdk'
+  s.vendored_frameworks = 'LinkedInSDK/linkedin-sdk.framework'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#s.preserve_paths = 'LinkedInSDK/linkedin-sdk.framework/**/*'
+#s.module_map = 'LinkedInSDK/linkedin-sdk.framework/Headers/module.modulemap'
+
+  #s.public_header_files = 'linkedin-sdk.framework/Headers/LISDK.h'
+  #s.user_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => 'LinkedInSDK' }
+
 end
