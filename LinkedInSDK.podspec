@@ -18,17 +18,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.header_dir = 'linkedin-sdk'
+  s.header_dir = 'LinkedInSDK'
+
+  s.preserve_paths = 'LinkedInSDK/
   s.vendored_frameworks = 'LinkedInSDK/linkedin-sdk.framework'
-
-#s.preserve_paths = 'LinkedInSDK/linkedin-sdk.framework/**/*'
-#s.module_map = 'LinkedInSDK/linkedin-sdk.framework/Headers/module.modulemap'
-
-  #s.public_header_files = 'linkedin-sdk.framework/Headers/LISDK.h'
-  #s.user_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => 'LinkedInSDK' }
-  s.pod_target_xcconfig = {
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/LinkedInSDK',
-    'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
-  }
+  s.public_header_files = 'LinkedInSDK/linkedin-sdk.framework/**/*.h'
 
 end

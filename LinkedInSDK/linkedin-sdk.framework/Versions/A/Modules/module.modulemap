@@ -1,6 +1,0 @@
-framework module LISDK {
-    umbrella header "LISDK.h"
-
-    export *
-    module * { export * }
-}
