@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinkedInSDK'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'A short description of LinkedInSDK.'
 
   s.homepage         = 'https://github.com/pencildrummer/LinkedInSDK'
@@ -18,15 +18,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.header_dir = 'LinkedInSDK'
-
-  s.source_files = 'LinkedInSDK/linkedin-sdk.framework/Headers/*.{h,m}', 'LinkedInSDK/*.{swift,m}'
-
-  s.frameworks = 'linkedin-sdk'
-  s.vendored_frameworks = 'LinkedInSDK/linkedin-sdk.framework'
-  s.user_target_xcconfig = {
-    'OTHER_LDFLAGS' => '-framework linkedin-sdk',
-    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/../../LinkedInSDK/"'
-  }
+  s.source_files = 'LinkedInSDKDummy.{h,m}'
+  s.preserve_paths = 'linkedin-sdk.framework'
+  s.requires_arc = true
+  s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/LinkedInSDK"' }
 
 end
